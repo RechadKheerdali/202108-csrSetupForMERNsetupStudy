@@ -14,13 +14,21 @@ import React from 'react';
 /*
 */
 
-const Klogin = props => {
-    console.log( props );
+const Klogin = () => {
+    // console.log( props );
+    const iKsubmit = (event) => {
+        event.preventDefault()
+        console.log('Klogin submit')
+    }
 
-    /*iKsimple version */
     return (
         <div>
             <h1>iK Klogin working</h1>
+            <form onSubmit={iKsubmit}>
+                <input type='email' name='email' />
+                <input type='password' name='password' />
+                <button type='submit'>iK submit</button>
+            </form>
         </div>
     ); /*END return */
 

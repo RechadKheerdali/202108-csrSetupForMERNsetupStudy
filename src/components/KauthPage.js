@@ -1,8 +1,8 @@
-// import './KhomePage.css';
+// import './KauthPage.css';
 import React from 'react';
 // import ReactDOM from 'react-dom';
 // import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'; 
+// import { BrowserRouter, Route } from 'react-router-dom'; 
 // import { createStore, applyMiddleware, compose } from 'redux';
 // import { Provider, connect, ReactReduxContext } from 'react-redux';
 // import ReduxThunk from 'redux-thunk';
@@ -14,17 +14,14 @@ import { Link } from 'react-router-dom';
 /*
 */
 
-const KhomePage = () => {
+const KauthPage = () => {
     // console.log( props );
 
     return (
         <div>
-            <h1>iK KhomePage working</h1>
-            <Link to='/signup'>to signup page</Link>
-            <Link to='/login'>to login page</Link>
-            <Link to='/authpage'>to authpage page</Link>
+            <h1>iK KauthPage working</h1>
         </div>
     ); /*END return */
-}; /*END KhomePage component */
+}; /*END KauthPage component */
 
-export default KhomePage;
+export default KauthPage;

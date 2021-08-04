@@ -10,17 +10,20 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import DOMPurify from 'dompurify';
 
 import KhomePage from './components/KhomePage.js'
+import KsignUp from './components/KsignUp'
 import Klogin from './components/Klogin.js'
+import KauthPage from './components/KauthPage.js'
 
-const App = props => {
-     console.log( props );
+const App = () => {
+    //  console.log( props );
 
-    /*iK add more <Route> for path pages if needed */
     return (
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={KhomePage} />
-                <Route path="/login" exact render={ () => <Klogin/> } />
+                <Route path="/signup" exact component={KsignUp} />
+                <Route path="/login" exact component={Klogin} />
+                <Route path="/authpage" exact component={KauthPage} />
                 <Route render={() => <div>iK error page</div>} />
             </Switch>
         </BrowserRouter>
