@@ -35,7 +35,7 @@ const KsignUp = () => {
             <form onSubmit={iKsubmit}>
                 <input type='email' name='email' />
                 <input type='password' name='password' />
-                <button type='submit'>iK submit</button>
+                <button type='submit'>iK submit button</button>
             </form>
         </div>
     ); /*END return */
