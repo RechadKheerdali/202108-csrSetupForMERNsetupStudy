@@ -20,6 +20,7 @@ const KauthPage = () => {
     return (
         <div>
             <h1>iK KauthPage working</h1>
+            <p>You have to be authenticated to see this page</p>
         </div>
     ); /*END return */
 }; /*END KauthPage component */
