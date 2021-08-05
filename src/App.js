@@ -12,6 +12,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import KhomePage from './components/KhomePage.js'
 import KsignUp from './components/KsignUp'
 import Klogin from './components/Klogin.js'
+import Klogout from './components/Klogout.js'
 import KauthPage from './components/KauthPage.js'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path="/" exact component={KhomePage} />
                 <Route path="/signup" exact component={KsignUp} />
                 <Route path="/login" exact component={Klogin} />
+                <Route path="/logout" exact component={Klogout} />
                 <Route path="/authpage" exact component={KauthPage} />
                 <Route render={() => <div>iK error page</div>} />
             </Switch>

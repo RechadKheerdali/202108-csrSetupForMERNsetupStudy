@@ -1,8 +1,8 @@
-// import './KhomePage.css';
+// import './Klogout.css';
 import React from 'react';
 // import ReactDOM from 'react-dom';
 // import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'; 
+// import { BrowserRouter, Route } from 'react-router-dom'; 
 // import { createStore, applyMiddleware, compose } from 'redux';
 // import { Provider, connect, ReactReduxContext } from 'react-redux';
 // import ReduxThunk from 'redux-thunk';
@@ -14,18 +14,24 @@ import { Link } from 'react-router-dom';
 /*
 */
 
-const KhomePage = () => {
+const Klogout = () => {
     // console.log( props );
+    const iKsubmit = (event) => {
+        event.preventDefault()
+        console.log('Klogout submit')
+    }
 
     return (
         <div>
-            <h1>iK KhomePage working</h1>
-            <Link to='/signup'>to signup page</Link>
-            <Link to='/login'>to login page</Link>
-            <Link to='/logout'>to logout page</Link>
-            <Link to='/authpage'>to authpage page</Link>
+            <h1>iK Klogout working</h1>
+            <form onSubmit={iKsubmit}>
+                <input type='email' name='email' />
+                <input type='password' name='password' />
+                <button type='submit'>iK submit</button>
+            </form>
         </div>
     ); /*END return */
-}; /*END KhomePage component */
 
-export default KhomePage;
+}; /*END Klogout component */
+
+export default Klogout;

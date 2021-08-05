@@ -6,7 +6,7 @@ import React from 'react';
 // import { createStore, applyMiddleware, compose } from 'redux';
 // import { Provider, connect, ReactReduxContext } from 'react-redux';
 // import ReduxThunk from 'redux-thunk';
-// import axios from 'axios';
+import axios from 'axios';
 // import DOMPurify from 'dompurify';
 // import KcomponentDidCatch1 from '../ziK-Tools/kError-pages/KcomponentDidCatch.js';
 
@@ -16,8 +16,16 @@ import React from 'react';
 
 const KsignUp = () => {
     // console.log( props );
+
     const iKsubmit = (event) => {
         event.preventDefault()
+
+        // making requests to 202108-05MERNsetupStudy
+        axios.get('http://localhost:4000')
+            .then(iKdata => {
+                console.log(iKdata)
+            })
+
         console.log('KsignUp submit')
     }
 
@@ -31,7 +39,6 @@ const KsignUp = () => {
             </form>
         </div>
     ); /*END return */
-
 }; /*END KsignUp component */
 
 export default KsignUp;
