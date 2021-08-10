@@ -31,6 +31,7 @@ const Klogin = () => {
             .then(iKresponse => {
                 console.log(222)
                 console.log(iKresponse)
+                // console.log(document.cookie)
             })
             .catch(err => {
                 console.log(333)

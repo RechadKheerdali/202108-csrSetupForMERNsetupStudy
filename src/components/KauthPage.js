@@ -20,6 +20,7 @@ const KauthPage = () => {
         axios.get('http://localhost:4000/api/authpage')
             .then(iKresponse => {
                 console.log(iKresponse)
+                // console.log(document.cookie)
             })
             .catch(err => {
                 console.log(err)
