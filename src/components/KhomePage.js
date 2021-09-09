@@ -24,7 +24,8 @@ const KhomePage = () => {
             <Link to='/login'>to login page</Link>
             <Link to='/logout'>to logout page</Link>
             <Link to='/authpage'>to authpage page</Link>
-            <Link to='/googlepage'>to authpage page</Link>
+            <Link to='/googlepage'>to googlepage page</Link>
+            <Link to='/form'>to form page</Link>
         </div>
     ); /*END return */
 }; /*END KhomePage component */

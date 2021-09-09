@@ -15,6 +15,7 @@ import Klogin from './components/Klogin.js'
 import Klogout from './components/Klogout.js'
 import KauthPage from './components/KauthPage.js'
 import KgooglePage from './components/KgooglePage.js'
+import Kform from './components/Kform.js'
 
 const App = () => {
     //  console.log( props );
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path="/logout" exact component={Klogout} />
                 <Route path="/authpage" exact component={KauthPage} />
                 <Route path="/googlepage" exact component={KgooglePage} />
+                <Route path="/form" exact component={Kform} />
                 <Route render={() => <div>iK error page</div>} />
             </Switch>
         </BrowserRouter>
